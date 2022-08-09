@@ -17,5 +17,14 @@
 */
 
 // When you click on the button it will first alert you that the button is clicked and after then paragraph is clicked and after that section clicked means
-// it will not run the oder or step by step one any event is called it triggers all the remeaning events.
+// it will not run the oder or step by step one any event is called it triggers all the remeaning events. and this is called event bubbling.
+
+
+const button = document.querySelector('button');
+button.addEventListener('click',function(e){
+       e.stoppropogration();      
+});
+
+
+// to stop bubbling you should use event object called = "stoppropogation()"
 
